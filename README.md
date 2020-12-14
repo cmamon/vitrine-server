@@ -2,4 +2,5 @@
 
 Example server project for an app created with a JavaScript Fullstack. 
 
-Here on the backend: Node.js, GraphQL, TypeORM with TypeScript.   
+Here on the backend: Node.js, GraphQL, TypeORM with TypeScript.
+Using PostgreSQL as database.
