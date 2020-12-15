@@ -2,7 +2,7 @@
   "type": "postgres",
   "url": "postgres://postgres:postgres@localhost/vitrine",
   "entities": [ "dist/entity/**/*.js" ],
-  "migrations": ["src/migration/**/*.ts"],
+  "migrations": ["dist/migration/**/*.js"],
   "cli": {
     "migrationsDir": "src/migration"
   }
