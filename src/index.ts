@@ -3,17 +3,12 @@ import express from 'express';
 import { createConnection } from 'typeorm';
 import { ApolloServer } from 'apollo-server-express';
 import { buildSchema } from 'type-graphql';
-import { ProductResolver } from './resolvers/product';
+import { ProductResolver } from './resolver/product';
 import { Product } from './entity/Product';
 
 
 const main = async () => {
-  const connection = await createConnection({
-    type: 'postgres',
-    url: 'postgres://postgres:postgres@localhost/vitrine',
-    entities: [ Product ],
-    synchronize: true
-  })
+  const connection = await createConnection();
 
   const app = express();
   

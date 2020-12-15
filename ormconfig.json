@@ -1,0 +1,9 @@
+{
+  "type": "postgres",
+  "url": "postgres://postgres:postgres@localhost/vitrine",
+  "entities": [ "dist/entity/**/*.js" ],
+  "migrations": ["src/migration/**/*.ts"],
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
