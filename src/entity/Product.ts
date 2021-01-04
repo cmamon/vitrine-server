@@ -1,16 +1,16 @@
 import { Field, ObjectType } from 'type-graphql';
-import { 
+import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-  BaseEntity
+  BaseEntity,
 } from 'typeorm';
 
 @ObjectType()
 @Entity()
-export class Product extends BaseEntity {
+export default class Product extends BaseEntity {
   @Field()
   @PrimaryGeneratedColumn()
   id: number;
