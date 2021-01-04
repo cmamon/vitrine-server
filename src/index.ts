@@ -3,9 +3,11 @@ import express from 'express';
 import { createConnection } from 'typeorm';
 import { ApolloServer } from 'apollo-server-express';
 import { buildSchema } from 'type-graphql';
+import dotenv from 'dotenv';
 import ProductResolver from './resolver/product';
 
 const main = async () => {
+  dotenv.config();
   await createConnection();
 
   const app = express();
